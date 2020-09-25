@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sassy Cosmos</title>
+</head>
+<body>
+    <main>
+        <h1><a href="../index.html">Sassy Cosmos</a></h1>
+        <p>Welcome to planet Mixins!</p>
+        <div class="container">
+            <div class="planet">
+                <img src="../img/p4.svg" alt="#" />
+            </div>
+        </div>
+    </main>
+
+    <article>
+        <div class="article">
+            <div class="card">
+            <p>A Mixin is a block of code that lets us group CSS declarations we may reuse throughout our site.</p>
+                
+            <p>There are many elements we want displayed flex, and typing this declaration above over and over gets boring pretty fast. This is where Sass Mixins come in.</p>
+
+            <p>Creating a Mixin is very simple, all we have to do is use @mixin command followed by a space and our Mixin name, then we open and close our curly brackets. Something like this:</p>
+
+            <p class="code"><code>@mixin flex {<br>
+                // write the css here <br>
+                display: -webkit-flex; <br>
+                display: flex;
+            }</code></p>
+
+            <p>To use a Mixin, we simply use @include followed by the name of the Mixin and a semi-colon.</p>
+
+            <p class="code"><code>.row { <br>
+                @include flex; <br>
+            }</code></p>
+
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <a href="https://danielbergmann.me/"><p>Created by Daniel Bergmann</p></a>
+    </footer>
+</body>
+</html>
